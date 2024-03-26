@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 60px;
+    position: sticky;
+    z-index: 100;
+    background-color: #FFFFFF;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+}
+.active{
+    color: black;
+    text-decoration: underline;
+}
+.icons{
+    display: flex;
+    gap: 15px;
+}
+.icons svg{
+    font-size: 20px;
+}
+.basketicon{
+    position: relative;
+}
+.basketicon span{
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: -9px;
+    left: 13px;
+    display: flex;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar{
+    transition: 0.7s;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    background-color: #FFFFFF;
+    z-index: 100;
+}
+.sidebar.open {
+  right: 0;
+}
+.basket-sidebar{
+    transition: 0.7s;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    background-color: #FFFFFF;
+    z-index: 100;
+}
+.basket-sidebar h3{
+    position: relative;
+    top: 100px;
+    left: 140px;
+}
+.buttons{
+    position: absolute;
+    bottom: 100px;
+    left: 90px;
+}
+.buttons button{
+    border: none;
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.basket-sidebar.open{
+    right: 0px;
+}
+.hamburgermenu{
+    display: none;
+    margin-left: 30px;
+    align-items: center;
+    font-size: 25px!important;
+}
+.menulinks-sidebar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 25px;
+}
+.close{
+    position: absolute;
+    font-size: 30px;
+    right: 10px;
+    top: 5px;
+    
+}
+.active-sidebar{
+    color: rgb(64, 64, 247);
+    text-decoration: none;
+}
+.product-image1{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.product-div{
+    position: relative;
+    top: 120px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    display: flex;
+    gap: 10px;
+}
+.delete-icon{
+    position: absolute;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: gray;
+    display: none;
+}
+.product-div div:first-child{
+    position: relative;
+}
+.product-div div:first-child:hover .delete-icon{
+    display: inline-block;
+}
+.admin{
+    cursor: pointer;
+}
+@media only screen and (max-width: 450px){
+
+}
+@media only screen and (max-width: 600px){
+
+}
+@media only screen and (max-width: 777px){
+
+}
+@media only screen and (max-width: 991px){
+    .hamburgermenu{
+        display: block;
+    }
+    .menulinks{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+@media only screen and (min-width: 1200px) {
+
+}

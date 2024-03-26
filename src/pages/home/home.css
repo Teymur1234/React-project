@@ -1,0 +1,211 @@
+.slider {
+    position: relative;
+    width: 100%!important;
+    height: 600px;
+  }
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.prev{
+    position: absolute;
+    cursor: pointer;
+    top: 270px;
+    left: 10px;
+    font-size: 40px;
+}
+.next{
+    position: absolute;
+    cursor: pointer;
+    top: 270px;
+    right: 10px;
+    font-size: 40px;
+}
+.slide button{
+    background-color: transparent;
+    border: 1px solid black;
+    height: 45px;
+    width: 150px;
+    font-size: 11px;
+    cursor: pointer;
+}
+.slide button:hover{
+    border: none;
+    background-color: black;
+    color: white;
+}
+.slide h1{
+    color: white;
+    font-size: 45px;
+}
+.information{
+    background-color: #F8F9FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    /* height: 230px; */
+}
+.information-parts{
+    background-color: white;
+    width: 330px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 15px;
+    margin-top: 10px;
+    gap: 3px;
+}
+
+.information-parts svg{
+    font-size: 28px;
+}
+.information-parts h1{
+    font-weight: 100;
+    color: gray;
+}
+.information-parts p{
+    color: gray;
+}
+.products{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+}
+.product h3{
+    cursor: pointer;
+}
+.product img{
+    width: 320px;
+    cursor: pointer;
+    height: 450px;
+}
+.price{
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    justify-content: center;
+}
+.price button{
+    width: 140px;
+    height: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.price button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.product img:hover{
+    transform: scale(1.04);
+}
+.image-section{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    height: 80%;
+    padding-left: 15px;
+    width: 73%;
+    background-image: url("https://preview.colorlib.com/theme/product/images/hero_bg_1.jpg.webp");
+}
+.image-div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    gap: 5px;
+    width: 45%;
+    background-color: white;
+    height: 200px;
+}
+.image-div button{
+    width: 130px;
+    height: 40px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 450px){
+    .image-div{
+        height: 40%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .slide h1{
+        font-size: 30px;
+        margin-left: 5px;
+    }
+    .product img{
+        width: 180px!important;
+        height: 250px!important;
+    }
+    .product h3{
+        font-size: 12px;
+    }
+    .image{
+        background-position: center;
+    }
+}
+@media only screen and (max-width: 777px){
+    .information{
+        flex-wrap: wrap;
+    }
+    .product img{
+        width: 240px;
+        height: 340px;
+    }
+    .image{
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .information-parts{
+        width: 230px;
+        margin-left: 10px;
+    }
+    .information{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .image{
+        height: 700px;
+    }
+    .image-div{
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+
+}
